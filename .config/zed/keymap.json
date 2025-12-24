@@ -1,0 +1,315 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-s f": "file_finder::Toggle"
+    }
+  },
+  {
+    "bindings": {
+      "ctrl-f s": [
+        "task::Spawn",
+        { "task_name": "file_finder_fuzzy", "reveal_target": "center" }
+      ]
+    }
+  },
+  {
+    "bindings": {
+      "ctrl-g s": [
+        "task::Spawn",
+        { "task_name": "fulltext_search_fuzzy", "reveal_target": "center" }
+      ]
+    }
+  },
+  {
+    "context": "Editor && vim_mode == insert",
+    "bindings": {
+      // "j k": "vim::NormalBefore"
+    }
+  },
+  {
+    "bindings": {
+      "ctrl-b": "workspace::ToggleLeftDock"
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "cmd-b": null
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-g g": "git_panel::ToggleFocus"
+    }
+  },
+  {
+    "bindings": {
+      "ctrl-e": "project_panel::ToggleFocus"
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "cmd-shift-e": null
+    }
+  },
+  {
+    "context": "AgentPanel",
+    "bindings": {
+      "ctrl-e": "project_panel::ToggleFocus"
+    }
+  },
+  {
+    "context": "AgentPanel",
+    "bindings": {
+      "cmd-shift-e": null
+    }
+  },
+  {
+    "bindings": {
+      "ctrl-s g": "project_search::ToggleFocus"
+    }
+  },
+  {
+    "bindings": {
+      "ctrl-t": "terminal_panel::Toggle"
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-`": null
+    }
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      "ctrl-w s": "pane::SplitDown"
+    }
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      "ctrl-w v": "pane::SplitRight"
+    }
+  },
+  {
+    "bindings": {
+      "ctrl-w k": "pane::SplitAndMoveDown"
+    }
+  },
+  {
+    "bindings": {
+      "ctrl-w l": "pane::SplitAndMoveRight"
+    }
+  },
+  {
+    "bindings": {
+      "ctrl-w h": "pane::SplitAndMoveLeft"
+    }
+  },
+  {
+    "bindings": {
+      "ctrl-w j": "pane::SplitAndMoveUp"
+    }
+  },
+  {
+    "bindings": {
+      "ctrl-w .": "pane::JoinAll"
+    }
+  },
+  {
+    "context": "Pane",
+    "bindings": {
+      "ctrl-[": "pane::ActivatePreviousItem"
+    }
+  },
+  {
+    "context": "Pane",
+    "bindings": {
+      "ctrl-]": "pane::ActivateNextItem"
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-1": ["workspace::ActivatePane", 0]
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-2": ["workspace::ActivatePane", 1]
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-3": ["workspace::ActivatePane", 2]
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-4": ["workspace::ActivatePane", 3]
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-5": ["workspace::ActivatePane", 4]
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-cmd-j": "workspace::ActivatePaneDown"
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-cmd-h": "workspace::ActivatePaneLeft"
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-cmd-k": "workspace::ActivatePaneUp"
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-l": null
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-cmd-l": "workspace::ActivatePaneRight"
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-d": "editor::Delete"
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-d d": "editor::DeleteLine"
+    }
+  },
+  // {
+  //   "context": "ProjectPanel",
+  //   "bindings": {
+  //     "d": [
+  //       "project_panel::Delete",
+  //       {
+  //         "skip_prompt": false
+  //       }
+  //     ]
+  //   }
+  // },
+  // {
+  //   "context": "ProjectPanel",
+  //   "bindings": {
+  //     "c": "project_panel::Copy"
+  //   }
+  // },
+  // {
+  //   "context": "ProjectPanel",
+  //   "bindings": {
+  //     "x": "project_panel::Cut"
+  //   }
+  // },
+  {
+    "context": "(ProjectPanel && not_editing)",
+    "bindings": {
+      "enter": "project_panel::Open"
+    }
+  },
+  // {
+  //   "context": "ProjectPanel",
+  //   "bindings": {
+  //     "r": "project_panel::Rename"
+  //   }
+  // },
+  // {
+  //   "context": "ProjectPanel",
+  //   "bindings": {
+  //     "a": "project_panel::NewFile"
+  //   }
+  // },
+  // {
+  //   "context": "ProjectPanel",
+  //   "bindings": {
+  //     "shift-a": "project_panel::NewDirectory"
+  //   }
+  // },
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-g d": "editor::GoToDefinition"
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-g t": "editor::GoToTypeDefinition"
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-g k": "editor::Hover"
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-g r": "editor::FindAllReferences"
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-q": "outline_panel::ToggleFocus"
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-s g": "pane::DeploySearch"
+    }
+  },
+  {
+    "context": "Pane",
+    "bindings": {
+      "ctrl-s g": "pane::DeploySearch"
+    }
+  },
+  {
+    "context": "ProjectSearchBar",
+    "bindings": {
+      "ctrl-s g": "search::FocusSearch"
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-k k": "diagnostics::Deploy"
+    }
+  }
+]

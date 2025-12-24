@@ -1,0 +1,72 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "diagnostics_max_severity": "all",
+  "inlay_hints": {
+    "show_background": false
+  },
+  "preferred_line_length": 80,
+  "always_treat_brackets_as_autoclosed": false,
+  "terminal": {
+    "font_size": 14.0,
+    "button": false
+  },
+  "diagnostics": {
+    "inline": {
+      "padding": 2,
+      "enabled": true
+    }
+  },
+  "scrollbar": {
+    // "show_diagnostics": "warning"
+    "git_diff": false
+  },
+
+  // "languages": {
+  //   "Python": {
+  //     "language_servers": ["pyright"]
+  //   }
+  // },
+  "minimap": {
+    "show": "never"
+  },
+  "soft_wrap": "editor_width",
+  "project_panel": {
+    "auto_reveal_entries": false
+  },
+  "base_keymap": "VSCode",
+  "agent": {
+    "always_allow_tool_actions": true,
+    "default_profile": "write",
+    "play_sound_when_agent_done": true,
+    "default_model": {
+      "provider": "copilot_chat",
+      "model": "gpt-5"
+    },
+    "enabled": true,
+    "button": true,
+    "model_parameters": []
+  },
+  "autosave": {
+    "after_delay": {
+      "milliseconds": 1000
+    }
+  },
+  "buffer_font_family": "Iosevka Nerd Font Propo",
+  "auto_indent_on_paste": true,
+  "linked_edits": true,
+  "ui_font_size": 15,
+
+  "buffer_font_size": 16,
+  "theme": "One Dark",
+  "icon_theme": "Catppuccin Mocha",
+  "tabs": { "file_icons": false },
+  "show_edit_predictions": false,
+  "show_completions_on_input": true
+}
