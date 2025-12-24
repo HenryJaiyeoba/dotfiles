@@ -1,0 +1,7 @@
+# GitHub Copilot (contains tokens)
+github-copilot/
+
+**/.cache/
+**/node_modules/
+**/plugged/
+**/lazy/
