@@ -1,7 +1,16 @@
-# GitHub Copilot (contains tokens)
-github-copilot/
 
+# Auth & secrets
+github-copilot/
+gh/
+op/
+aws/
+gcloud/
+
+# Caches
 **/.cache/
-**/node_modules/
-**/plugged/
+**/cache/
+
+# Editors
 **/lazy/
+**/plugged/
+**/node_modules/
