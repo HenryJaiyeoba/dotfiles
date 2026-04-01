@@ -1,22 +1,28 @@
 # --- Fonts ---
 # Your preferred font.
 font-family = "Iosevka Nerd Font Propo"
-font-size = 17
+font-size = 22 
 # Enable ligatures (e.g., => turns into an arrow)
 font-feature = calt
 # 2025 Standard for high-DPI displays
 window-colorspace = "display-p3"
 
 # --- Theming ---
-theme = kanagawa-dragon
+theme = "catppuccin-mocha"
 # You had opacity at 1.0 (solid). I kept this, but if you want 
 # the modern blur look, set this to 0.95 and add `background-blur-radius = 20`
 background-opacity = 1
+
+#cursor settings
+cursor-style = underline
+shell-integration-features = no-cursor
+#cursor-style-blink = true
+
 # Kept your transparent titlebar preference, but "hidden" is often cleaner for Neovim
 macos-titlebar-style = transparent 
 window-decoration = client
 #icons
-macos-custom-icon = ~/Config/ghostty/icons/ghostty-tahoe.png
+macos-custom-icon = /Users/henryjaiyeoba/.config/ghostty/icons/ghostty-catppuccin-mocha.icns
 macos-icon = custom
 # --- Window Layout ---
 # Padding makes Neovim look like a GUI app rather than a terminal
@@ -24,6 +30,7 @@ window-padding-x = 2
 window-padding-y = 0,2
 # Start maximized (optional, great for power users)
 # maximize = true
+
 
 # --- Neovim / Power User Specifics ---
 # CRITICAL for Neovim: This allows Option+Key to work as Alt+Key on macOS.
